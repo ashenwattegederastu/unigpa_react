@@ -31,6 +31,7 @@ import {
 } from "@/components/ui/sidebar"
 import { logout } from "@/lib/auth"
 import { SettingsForm } from "./settings-form"
+import { ModeToggle } from "./mode-toggle"
 
 export function NavUser({
   user,
@@ -105,6 +106,10 @@ export function NavUser({
                 Account
               </DropdownMenuItem>
             </DropdownMenuGroup>
+            <DropdownMenuSeparator />
+            <div className="px-2 py-1.5">
+              <ModeToggle />
+            </div>
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={handleLogout}>
               <SignOut />

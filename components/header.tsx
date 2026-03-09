@@ -4,6 +4,7 @@ import { GraduationCapIcon, List, ShootingStarIcon, UsersIcon, X } from '@phosph
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
+import { ModeToggle } from '@/components/mode-toggle'
 const menuItems = [
     { icon: ShootingStarIcon, name: 'Features', href: '#link' },
     //{ icon: Heart, name: 'Pricing', href: '#link' },
@@ -113,6 +114,7 @@ export const HeroHeader = () => {
                                         <span>Get Started</span>
                                     </Link>
                                 </Button>
+                                <ModeToggle />
                             </div>
                         </div>
                     </div>
